@@ -3,35 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechGear - Checkout</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Checkout - TechGear</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Header (same as Home) -->
     <header>
         <div class="container">
             <div class="logo">
-                <h1><a href="index.html">TechGear</a></h1>
+                <h1><a href="#">TechGear</a></h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="product.html">Products</a></li>
-                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
             <div class="search-bar">
-                <input type="text" placeholder="Search for products...">
-                <button><i class="fas fa-search"></i></button>
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
             </div>
         </div>
     </header>
 
-    <!-- Checkout Form -->
+    <!-- Checkout Section -->
     <section id="checkout">
         <div class="container">
             <h2>Checkout</h2>
-            <form action="#">
+            <form action="#" method="POST">
                 <div class="form-group">
                     <label for="full-name">Full Name:</label>
                     <input type="text" id="full-name" name="full-name" required>
@@ -53,19 +54,17 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-links">
-                <ul>
-                    <li><a href="#">Customer Support</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <p>&copy; 2024 TechGear. All rights reserved.</p>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Customer Support</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
+        <p>&copy; 2024 TechGear. All rights reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
