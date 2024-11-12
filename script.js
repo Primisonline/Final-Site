@@ -1,24 +1,22 @@
-// Carousel functionality for Hero Section
-let currentIndex = 0;
+// Carousel functionality for the hero section
+let currentSlide = 0;
 const slides = document.querySelectorAll('.carousel-slide');
 const totalSlides = slides.length;
 
 function showSlide(index) {
     if (index >= totalSlides) {
-        currentIndex = 0;
+        currentSlide = 0;
     } else if (index < 0) {
-        currentIndex = totalSlides - 1;
+        currentSlide = totalSlides - 1;
     } else {
-        currentIndex = index;
+        currentSlide = index;
     }
-    const offset = -currentIndex * 100;
-    document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
+
+    const slideWidth = slides[0].clientWidth;
+    const offset = -currentSlide * slideWidth;
+    document.querySelector('.carousel').style.transform = `translateX(${offset}px)`;
 }
 
-// Automatic Slide Change
 setInterval(() => {
-    showSlide(currentIndex + 1);
-}, 5000);
-
-// Show the first slide
-showSlide(currentIndex);
+    showSlide(currentSlide + 1);
+}, 5000); // Change slide every 5 seconds
