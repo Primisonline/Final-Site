@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header Section -->
     <header>
         <div class="container">
             <div class="logo">
@@ -20,10 +20,14 @@
                     <li><a href="checkout.html">Checkout</a></li>
                 </ul>
             </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
         </div>
     </header>
 
-    <!-- Product Listings -->
+    <!-- Products Section -->
     <section id="products">
         <div class="container">
             <h2>Our Products</h2>
@@ -40,14 +44,14 @@
                 <button class="btn-primary">View Details</button>
             </div>
             <div class="product-card">
-                <img src="images/product3.jpg" alt="Smartphone Model A">
-                <h3>Smartphone Model A</h3>
+                <img src="images/product3.jpg" alt="Smartphone XYZ">
+                <h3>Smartphone XYZ</h3>
                 <p class="price">$499.99</p>
                 <button class="btn-primary">View Details</button>
             </div>
             <div class="product-card">
-                <img src="images/product4.jpg" alt="Smartwatch Z1">
-                <h3>Smartwatch Z1</h3>
+                <img src="images/product4.jpg" alt="Smartwatch Model A">
+                <h3>Smartwatch A</h3>
                 <p class="price">$129.99</p>
                 <button class="btn-primary">View Details</button>
             </div>
@@ -57,9 +61,18 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>Contact us: info@techgear.com</p>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
             <p>&copy; 2024 TechGear. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
