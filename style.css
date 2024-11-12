@@ -19,13 +19,15 @@ header {
 }
 
 header .logo a {
-    color: electricblue;
+    color: #00FFFF;  /* Electric Blue */
     text-decoration: none;
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 header nav ul li {
@@ -39,7 +41,8 @@ header nav ul li a {
 }
 
 header .search-bar {
-    float: right;
+    display: flex;
+    align-items: center;
 }
 
 /* Featured Products Section */
@@ -62,14 +65,15 @@ header .search-bar {
 }
 
 .product-card .btn-primary {
-    background-color: electricblue;
+    background-color: #00FFFF;  /* Electric Blue */
     color: white;
     padding: 10px 20px;
     text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
 }
 
 .product-card .btn-primary:hover {
-    background-color: darkblue;
+    background-color: #008B8B;  /* Darker shade for hover */
 }
 
 /* Footer */
@@ -97,4 +101,28 @@ footer a {
 
 footer a:hover {
     color: #fff;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .product-card {
+        width: 48%; /* Two cards per row */
+    }
+
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .search-bar {
+        margin-top: 20px;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: 100%; /* Full width on mobile */
+    }
 }
