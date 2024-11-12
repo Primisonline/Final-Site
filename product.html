@@ -3,76 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechGear - Products</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Product - TechGear</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Header (same as Home) -->
     <header>
         <div class="container">
             <div class="logo">
-                <h1><a href="index.html">TechGear</a></h1>
+                <h1><a href="#">TechGear</a></h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="product.html">Products</a></li>
-                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
             <div class="search-bar">
-                <input type="text" placeholder="Search for products...">
-                <button><i class="fas fa-search"></i></button>
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
             </div>
         </div>
     </header>
 
-    <!-- Products Section -->
-    <section id="products">
+    <!-- Product Detail Section -->
+    <section id="product-detail">
         <div class="container">
-            <h2>Our Products</h2>
-            <div class="product-card">
+            <div class="product-image">
                 <img src="images/product1.jpg" alt="Laptop XYZ">
-                <h3>Laptop XYZ</h3>
+            </div>
+            <div class="product-info">
+                <h2>Laptop XYZ</h2>
                 <p class="price">$899.99</p>
-                <button class="btn-primary">View Details</button>
-            </div>
-            <div class="product-card">
-                <img src="images/product2.jpg" alt="Headphones ABC">
-                <h3>Headphones ABC</h3>
-                <p class="price">$199.99</p>
-                <button class="btn-primary">View Details</button>
-            </div>
-            <div class="product-card">
-                <img src="images/product3.jpg" alt="Smartphone XYZ">
-                <h3>Smartphone XYZ</h3>
-                <p class="price">$499.99</p>
-                <button class="btn-primary">View Details</button>
-            </div>
-            <div class="product-card">
-                <img src="images/product4.jpg" alt="Smartwatch Model A">
-                <h3>Smartwatch A</h3>
-                <p class="price">$129.99</p>
-                <button class="btn-primary">View Details</button>
+                <p class="description">This is a great laptop with cutting-edge features and design.</p>
+                <button class="btn-primary">Add to Cart</button>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-links">
-                <ul>
-                    <li><a href="#">Customer Support</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <p>&copy; 2024 TechGear. All rights reserved.</p>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Customer Support</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
+        <p>&copy; 2024 TechGear. All rights reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
