@@ -9,45 +9,57 @@
 <body>
     <!-- Header -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Products</a></li>
-                <li><a href="checkout.html">Checkout</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">TechGear</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Product Categories -->
-    <section id="product-categories">
-        <h2>Shop by Category</h2>
-        <ul>
-            <li><a href="#">Laptops</a></li>
-            <li><a href="#">Headphones</a></li>
-            <li><a href="#">Cameras</a></li>
-            <li><a href="#">Smartphones</a></li>
-        </ul>
-    </section>
-
-    <!-- Product List -->
-    <section id="product-list">
-        <div class="product-card">
-            <img src="images/product1.jpg" alt="Laptop XYZ">
-            <p>Laptop XYZ</p>
-            <p>$899.99</p>
-            <button>View Details</button>
-        </div>
-        <div class="product-card">
-            <img src="images/product2.jpg" alt="Headphones ABC">
-            <p>Headphones ABC</p>
-            <p>$199.99</p>
-            <button>View Details</button>
+    <!-- Product Listings -->
+    <section id="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-card">
+                <img src="images/product1.jpg" alt="Laptop XYZ">
+                <h3>Laptop XYZ</h3>
+                <p class="price">$899.99</p>
+                <button class="btn-primary">View Details</button>
+            </div>
+            <div class="product-card">
+                <img src="images/product2.jpg" alt="Headphones ABC">
+                <h3>Headphones ABC</h3>
+                <p class="price">$199.99</p>
+                <button class="btn-primary">View Details</button>
+            </div>
+            <div class="product-card">
+                <img src="images/product3.jpg" alt="Smartphone Model A">
+                <h3>Smartphone Model A</h3>
+                <p class="price">$499.99</p>
+                <button class="btn-primary">View Details</button>
+            </div>
+            <div class="product-card">
+                <img src="images/product4.jpg" alt="Smartwatch Z1">
+                <h3>Smartwatch Z1</h3>
+                <p class="price">$129.99</p>
+                <button class="btn-primary">View Details</button>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>Contact us: info@techgear.com</p>
+        <div class="container">
+            <p>Contact us: info@techgear.com</p>
+            <p>&copy; 2024 TechGear. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
