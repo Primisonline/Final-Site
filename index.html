@@ -9,47 +9,56 @@
 <body>
     <!-- Header -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Products</a></li>
-                <li><a href="checkout.html">Checkout</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">TechGear</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Hero Section with Video Background -->
+    <!-- Hero Section with Background Image -->
     <section id="hero">
-        <div class="hero-content">
-            <h1>Welcome to TechGear</h1>
-            <p>Your one-stop shop for all electronics</p>
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h2>Welcome to TechGear</h2>
+                <p>Your one-stop shop for the latest and greatest in electronics.</p>
+                <a href="product.html" class="cta-button">Shop Now</a>
+            </div>
         </div>
-        <video autoplay muted loop id="hero-video">
-            <source src="images/hero-video.mp4" type="video/mp4">
-        </video>
     </section>
 
     <!-- Featured Products -->
     <section id="featured-products">
-        <h2>Featured Products</h2>
-        <div class="product-card">
-            <img src="images/product1.jpg" alt="Laptop XYZ">
-            <p>Laptop XYZ</p>
-            <p>$899.99</p>
-            <button>View Details</button>
-        </div>
-        <div class="product-card">
-            <img src="images/product2.jpg" alt="Headphones ABC">
-            <p>Headphones ABC</p>
-            <p>$199.99</p>
-            <button>View Details</button>
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-card">
+                <img src="images/product1.jpg" alt="Laptop XYZ">
+                <h3>Laptop XYZ</h3>
+                <p class="price">$899.99</p>
+                <button class="btn-primary">View Details</button>
+            </div>
+            <div class="product-card">
+                <img src="images/product2.jpg" alt="Headphones ABC">
+                <h3>Headphones ABC</h3>
+                <p class="price">$199.99</p>
+                <button class="btn-primary">View Details</button>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>Contact us: info@techgear.com</p>
-        <p>Follow us on social media: <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
+        <div class="container">
+            <p>Contact us: info@techgear.com</p>
+            <p>&copy; 2024 TechGear. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
