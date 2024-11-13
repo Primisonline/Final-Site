@@ -26,7 +26,7 @@ function closeModal() {
 }
 
 // Cart functionality
-let cart = [];
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 function addToCart(name, price) {
     const product = { name, price };
@@ -72,3 +72,6 @@ function removeFromCart(index) {
     cart.splice(index, 1);
     updateCartUI();
 }
+
+// Initial cart UI update
+updateCartUI();
