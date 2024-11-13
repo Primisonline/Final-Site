@@ -45,32 +45,44 @@
         </div>
     </section>
 
-    <!-- Featured Products Section -->
+    <!-- Products Section -->
     <section id="products">
         <div class="container">
-            <h2>Featured Products</h2>
             <div class="product-card">
                 <h3>RIko model 935</h3>
                 <p class="price">$899.99</p>
-                <a href="product-page.html" class="btn-primary">View Details</a>
+                <button class="btn-primary" onclick="showProductInfo('RIko model 935', 899.99)">View Details</button>
+                <button class="btn-add" onclick="addToCart('RIko model 935', 899.99)">Add to Cart</button>
             </div>
             <div class="product-card">
                 <h3>NAN0 4</h3>
                 <p class="price">$499.99</p>
-                <a href="product-page.html" class="btn-primary">View Details</a>
+                <button class="btn-primary" onclick="showProductInfo('NAN0 4', 499.99)">View Details</button>
+                <button class="btn-add" onclick="addToCart('NAN0 4', 499.99)">Add to Cart</button>
             </div>
             <div class="product-card">
                 <h3>Lookout model 2025</h3>
                 <p class="price">$149.99</p>
-                <a href="product-page.html" class="btn-primary">View Details</a>
+                <button class="btn-primary" onclick="showProductInfo('Lookout model 2025', 149.99)">View Details</button>
+                <button class="btn-add" onclick="addToCart('Lookout model 2025', 149.99)">Add to Cart</button>
             </div>
             <div class="product-card">
                 <h3>Ark model 5</h3>
                 <p class="price">$299.99</p>
-                <a href="product-page.html" class="btn-primary">View Details</a>
+                <button class="btn-primary" onclick="showProductInfo('Ark model 5', 299.99)">View Details</button>
+                <button class="btn-add" onclick="addToCart('Ark model 5', 299.99)">Add to Cart</button>
             </div>
         </div>
     </section>
+
+    <!-- Product Info Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="product-name"></h2>
+            <p id="product-price"></p>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
