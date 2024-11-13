@@ -1,35 +1,20 @@
-// Carousel functionality for the hero section
-let currentSlide = 0;
-const slides = document.querySelectorAll('.carousel-slide');
-const totalSlides = slides.length;
+// Light/Dark mode toggle functionality
+document.getElementById('logo').addEventListener('click', function() {
+    // Toggle the class for light/dark mode
+    document.body.classList.toggle('light-mode');
 
-function showSlide(index) {
-    if (index >= totalSlides) {
-        currentSlide = 0;
-    } else if (index < 0) {
-        currentSlide = totalSlides - 1;
+    // Save the current theme in localStorage
+    if (document.body.classList.contains('light-mode')) {
+        localStorage.setItem('theme', 'light');
     } else {
-        currentSlide = index;
+        localStorage.setItem('theme', 'dark');
     }
+});
 
-    const slideWidth = slides[0].clientWidth;
-    const offset = -currentSlide * slideWidth;
-    document.querySelector('.carousel').style.transform = `translateX(${offset}px)`;
-}
-
-setInterval(() => {
-    showSlide(currentSlide + 1);
-}, 5000); // Change slide every 5 seconds
-
-// Show product details
-document.querySelectorAll('.product-card a').forEach(button => {
-    button.addEventListener('click', (e) => {
-        e.preventDefault();
-        const targetId = e.target.getAttribute('href').substring(1);
-        const targetDetails = document.getElementById(targetId);
-
-        if (targetDetails) {
-            targetDetails.style.display = 'block'; // Show product details
-        }
-    });
+// Apply the saved theme on page load
+document.addEventListener('DOMContentLoaded', function() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+        document.body.classList.add('light-mode');
+    }
 });
