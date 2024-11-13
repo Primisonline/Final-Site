@@ -10,20 +10,16 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="logo">
+            <div class="logo" id="logo">
                 <h1><a href="index.html">TechGear</a></h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home & Products</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="checkout.html">Checkout</a></li>
                     <li><a href="support.html">Support</a></li>
                 </ul>
             </nav>
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <button>Search</button>
-            </div>
         </div>
     </header>
 
@@ -35,7 +31,7 @@
                 <div class="carousel-caption">
                     <h2>Welcome to TechGear</h2>
                     <p>Explore the latest electronics</p>
-                    <a href="#featured-products" class="cta-button">Shop Now</a>
+                    <a href="index.html#products" class="cta-button">Shop Now</a>
                 </div>
             </div>
             <div class="carousel-slide">
@@ -43,132 +39,35 @@
                 <div class="carousel-caption">
                     <h2>Cutting Edge Tech</h2>
                     <p>Experience the future of technology</p>
-                    <a href="#featured-products" class="cta-button">Shop Now</a>
+                    <a href="index.html#products" class="cta-button">Shop Now</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Featured Products Section (Combined Home & Products) -->
-    <section id="featured-products">
+    <!-- Featured Products Section -->
+    <section id="products">
         <div class="container">
             <h2>Featured Products</h2>
             <div class="product-card">
-                <img src="images/future-laptop.png" alt="RIko model 935">
                 <h3>RIko model 935</h3>
                 <p class="price">$899.99</p>
-                <a href="#product-1-details" class="btn-primary">View Details</a>
+                <a href="product-page.html" class="btn-primary">View Details</a>
             </div>
             <div class="product-card">
-                <img src="images/future-phone.png" alt="NAN0 4">
                 <h3>NAN0 4</h3>
                 <p class="price">$499.99</p>
-                <a href="#product-2-details" class="btn-primary">View Details</a>
+                <a href="product-page.html" class="btn-primary">View Details</a>
             </div>
             <div class="product-card">
-                <img src="images/headphones.png" alt="Lookout model 2025">
                 <h3>Lookout model 2025</h3>
                 <p class="price">$149.99</p>
-                <a href="#product-3-details" class="btn-primary">View Details</a>
+                <a href="product-page.html" class="btn-primary">View Details</a>
             </div>
             <div class="product-card">
-                <img src="images/future-watch.png" alt="Ark model 5">
                 <h3>Ark model 5</h3>
                 <p class="price">$299.99</p>
-                <a href="#product-4-details" class="btn-primary">View Details</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Product Detail Sections (Hidden by default) -->
-    <section id="product-1-details" class="product-details">
-        <div class="container">
-            <h2>RIKO Model 935</h2>
-            <div class="product-detail">
-                <div class="product-image">
-                    <img src="images/future-laptop.png" alt="RIKO Model 935">
-                </div>
-                <div class="product-info">
-                    <p class="price">$899.99</p>
-                    <p>The RIKO Model 935 offers cutting-edge technology for professionals and gamers alike. Powered by the latest processor, stunning graphics, and an ultra-fast SSD, this laptop is built to perform.</p>
-                    <p><strong>Features:</strong></p>
-                    <ul>
-                        <li>16GB RAM</li>
-                        <li>1TB SSD</li>
-                        <li>Intel i7 Processor</li>
-                        <li>15.6" 4K Display</li>
-                    </ul>
-                    <a href="checkout.html" class="btn-primary">Buy Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="product-2-details" class="product-details">
-        <div class="container">
-            <h2>NAN0 4</h2>
-            <div class="product-detail">
-                <div class="product-image">
-                    <img src="images/future-phone.png" alt="NAN0 4">
-                </div>
-                <div class="product-info">
-                    <p class="price">$499.99</p>
-                    <p>The NAN0 4 is a powerful smartphone with an ultra-fast processor and 5G capability, offering exceptional performance in a sleek design.</p>
-                    <p><strong>Features:</strong></p>
-                    <ul>
-                        <li>8GB RAM</li>
-                        <li>256GB Storage</li>
-                        <li>5G Connectivity</li>
-                        <li>6.7" OLED Display</li>
-                    </ul>
-                    <a href="checkout.html" class="btn-primary">Buy Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="product-3-details" class="product-details">
-        <div class="container">
-            <h2>Lookout Model 2025</h2>
-            <div class="product-detail">
-                <div class="product-image">
-                    <img src="images/headphones.png" alt="Lookout Model 2025">
-                </div>
-                <div class="product-info">
-                    <p class="price">$149.99</p>
-                    <p>Experience crystal-clear sound and deep bass with the Lookout Model 2025 headphones. Perfect for music lovers and gamers alike.</p>
-                    <p><strong>Features:</strong></p>
-                    <ul>
-                        <li>Noise Cancellation</li>
-                        <li>Bluetooth 5.0</li>
-                        <li>20-Hour Battery Life</li>
-                        <li>Comfortable Over-Ear Design</li>
-                    </ul>
-                    <a href="checkout.html" class="btn-primary">Buy Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="product-4-details" class="product-details">
-        <div class="container">
-            <h2>Ark Model 5</h2>
-            <div class="product-detail">
-                <div class="product-image">
-                    <img src="images/future-watch.png" alt="Ark Model 5">
-                </div>
-                <div class="product-info">
-                    <p class="price">$299.99</p>
-                    <p>The Ark Model 5 smartwatch offers all the latest fitness tracking features with a sleek design that complements any style.</p>
-                    <p><strong>Features:</strong></p>
-                    <ul>
-                        <li>Heart Rate Monitor</li>
-                        <li>GPS and Fitness Tracking</li>
-                        <li>Waterproof</li>
-                        <li>Customizable Watch Faces</li>
-                    </ul>
-                    <a href="checkout.html" class="btn-primary">Buy Now</a>
-                </div>
+                <a href="product-page.html" class="btn-primary">View Details</a>
             </div>
         </div>
     </section>
