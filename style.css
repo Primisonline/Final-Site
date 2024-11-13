@@ -22,6 +22,9 @@ body.light-mode {
 header {
     background-color: #222;
     padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header .logo a {
@@ -46,6 +49,21 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: #00b3ff;
+}
+
+#slogan {
+    color: white;
+    text-align: right;
+}
+
+#slogan h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+#slogan p {
+    margin: 0;
+    font-size: 1.2em;
 }
 
 /* Hero Section */
@@ -150,8 +168,8 @@ header nav ul li a:hover {
     color: #333;
     margin: 15% auto;
     padding: 20px;
-    width: 50%;
-    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
 }
 
 .close-btn {
