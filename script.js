@@ -25,7 +25,7 @@ function closeModal() {
     document.getElementById('product-modal').style.display = 'none';
 }
 
-// Add to Cart functionality
+// Cart functionality
 let cart = [];
 
 function addToCart(name, price) {
