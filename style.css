@@ -44,8 +44,8 @@ header nav ul li a {
     text-decoration: none;
 }
 
-header .search-bar {
-    float: right;
+header nav ul li a:hover {
+    color: #00b3ff;
 }
 
 /* Hero Section */
@@ -86,7 +86,7 @@ header .search-bar {
     background-color: #007acc;
 }
 
-/* Featured Products Section */
+/* Products Section */
 #products {
     background-color: #444;
     padding: 40px 0;
@@ -98,7 +98,7 @@ header .search-bar {
     margin: 10px;
     padding: 20px;
     display: inline-block;
-    width: 24%;
+    width: 23%;
     box-sizing: border-box;
     transition: transform 0.3s ease;
 }
@@ -118,6 +118,54 @@ header .search-bar {
 
 .product-card .btn-primary:hover {
     background-color: #007acc;
+}
+
+.product-card .btn-add {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.product-card .btn-add:hover {
+    background-color: #218838;
+}
+
+/* Modal (for product details) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    color: #333;
+    margin: 15% auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* Footer */
@@ -145,22 +193,4 @@ footer a {
 
 footer a:hover {
     color: #fff;
-}
-
-/* Light Mode */
-body.light-mode header {
-    background-color: #fff;
-}
-
-body.light-mode footer {
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-body.light-mode .product-card {
-    background-color: #ddd;
-}
-
-body.light-mode .product-card .btn-primary {
-    background-color: #007acc;
 }
