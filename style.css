@@ -9,55 +9,14 @@ body {
 }
 
 body.light-mode {
-    background-color: white;
-    color: black;
-}
-
-/* Light mode inverse colors */
-body.light-mode .container {
-    background-color: #f0f0f0;
-}
-
-body.light-mode header {
-    background-color: #f2f2f2;
-}
-
-body.light-mode header .logo a {
-    color: red; /* Logo turns red */
-}
-
-body.light-mode header nav ul li a {
+    background-color: #f4f4f4;
     color: #333;
 }
 
-body.light-mode #hero {
-    background-color: #ddd;
-}
-
-body.light-mode #products {
-    background-color: #e0e0e0;
-}
-
-body.light-mode .product-card {
-    background-color: #fff;
-    color: #333; /* Make text darker for readability */
-}
-
-body.light-mode .product-card:hover {
-    background-color: #f5f5f5;
-}
-
-body.light-mode footer {
-    background-color: #ddd;
-    color: #333;
-}
-
-body.light-mode footer a {
-    color: #333;
-}
-
-body.light-mode footer a:hover {
-    color: red;
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px; /* Ensures it doesn't stretch too wide on larger screens */
 }
 
 /* Header */
@@ -93,18 +52,36 @@ header nav ul li a:hover {
     color: #00b3ff;
 }
 
+#slogan {
+    color: white;
+    text-align: right;
+    font-size: 1.5em;
+    flex-grow: 1;
+}
+
+#slogan h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+#slogan p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+/* Hero Section */
 #hero {
     margin: 50px 0;
-    text-align: right;
-    color: white;
-    font-size: 1.5em;
-    padding-right: 10%;
+    text-align: center;
 }
 
 #hero h2 {
+    font-size: 2.5em;
+    color: #fff;
     margin: 0;
 }
 
+/* Products Section */
 #products {
     background-color: #444;
     padding: 40px 0;
@@ -116,21 +93,29 @@ header nav ul li a:hover {
     margin: 10px;
     padding: 20px;
     display: inline-block;
-    width: 30%; /* Resize product cards to fit better */
+    width: 22%; /* Adjusted for better spacing and fitting */
     box-sizing: border-box;
     transition: transform 0.3s ease;
-    color: white;
+    border-radius: 10px;
 }
 
 .product-card:hover {
     transform: scale(1.05);
-    background-color: #777;
 }
 
 .product-card img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 1.1em;
 }
 
 .product-card .btn-primary {
@@ -159,6 +144,41 @@ header nav ul li a:hover {
     background-color: #218838;
 }
 
+/* Modal (for product details) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    color: #333;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* Footer */
 footer {
     background-color: #222;
@@ -184,4 +204,36 @@ footer a {
 
 footer a:hover {
     color: #fff;
+}
+
+/* Light Mode Adjustments */
+body.light-mode {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body.light-mode header {
+    background-color: #fff;
+}
+
+body.light-mode header .logo a {
+    color: #d9534f; /* Red logo in light mode */
+}
+
+body.light-mode #hero h2 {
+    color: #333;
+}
+
+body.light-mode .product-card {
+    background-color: #e9ecef;
+    color: #333;
+}
+
+body.light-mode .product-card:hover {
+    background-color: #f1f1f1;
+}
+
+body.light-mode footer {
+    background-color: #f1f1f1;
+    color: #333;
 }
