@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechGear - Electronics Store</title>
+    <title>Home - TechGear</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,74 +20,49 @@
                     <li><a href="support.html">Support</a></li>
                 </ul>
             </nav>
-            <div id="slogan">
-                <h2>Welcome to TechGear</h2>
-                <p>Experience the future of technology</p>
-            </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (Removed Featured Section) -->
     <section id="hero">
-        <div class="carousel">
-            <div class="carousel-slide">
-                <img src="https://github.com/Primisonline/Final-Site/blob/main/future-laptop.png?raw=true" alt="Featured Product 1">
-            </div>
-            <div class="carousel-slide">
-                <img src="https://github.com/Primisonline/Final-Site/blob/main/future-phone.png?raw=true" alt="Featured Product 2">
-            </div>
+        <div class="container">
+            <h2>Your First Stop Shop to Future Technologies</h2>
         </div>
     </section>
 
     <!-- Products Section -->
     <section id="products">
         <div class="container">
-            <!-- Product Card: RIko model 935 -->
+            <!-- RIko model 935 -->
             <div class="product-card">
                 <img src="https://github.com/Primisonline/Final-Site/blob/main/future-laptop.png?raw=true" alt="RIko model 935">
                 <h3>RIko model 935</h3>
-                <p class="price">$899.99</p>
-                <button class="btn-primary" onclick="showProductInfo('RIko model 935', 899.99)">View Details</button>
-                <button class="btn-add" onclick="addToCart('RIko model 935', 899.99)">Add to Cart</button>
+                <p>$899.99</p>
+                <a href="#" class="btn-primary" onclick="addToCart('RIko model 935', 899.99)">Add to Cart</a>
             </div>
-            
-            <!-- Product Card: NAN0 4 -->
+            <!-- NAN0 4 -->
             <div class="product-card">
                 <img src="https://github.com/Primisonline/Final-Site/blob/main/future-phone.png?raw=true" alt="NAN0 4">
                 <h3>NAN0 4</h3>
-                <p class="price">$499.99</p>
-                <button class="btn-primary" onclick="showProductInfo('NAN0 4', 499.99)">View Details</button>
-                <button class="btn-add" onclick="addToCart('NAN0 4', 499.99)">Add to Cart</button>
+                <p>$499.99</p>
+                <a href="#" class="btn-primary" onclick="addToCart('NAN0 4', 499.99)">Add to Cart</a>
             </div>
-
-            <!-- Product Card: Lookout model 2025 -->
+            <!-- Lookout model 2025 -->
             <div class="product-card">
                 <img src="https://github.com/Primisonline/Final-Site/blob/main/headphones.png?raw=true" alt="Lookout model 2025">
                 <h3>Lookout model 2025</h3>
-                <p class="price">$149.99</p>
-                <button class="btn-primary" onclick="showProductInfo('Lookout model 2025', 149.99)">View Details</button>
-                <button class="btn-add" onclick="addToCart('Lookout model 2025', 149.99)">Add to Cart</button>
+                <p>$149.99</p>
+                <a href="#" class="btn-primary" onclick="addToCart('Lookout model 2025', 149.99)">Add to Cart</a>
             </div>
-
-            <!-- Product Card: Ark model 5 -->
+            <!-- Ark model 5 -->
             <div class="product-card">
                 <img src="https://github.com/Primisonline/Final-Site/blob/main/future-watch.png?raw=true" alt="Ark model 5">
                 <h3>Ark model 5</h3>
-                <p class="price">$299.99</p>
-                <button class="btn-primary" onclick="showProductInfo('Ark model 5', 299.99)">View Details</button>
-                <button class="btn-add" onclick="addToCart('Ark model 5', 299.99)">Add to Cart</button>
+                <p>$299.99</p>
+                <a href="#" class="btn-primary" onclick="addToCart('Ark model 5', 299.99)">Add to Cart</a>
             </div>
         </div>
     </section>
-
-    <!-- Product Info Modal -->
-    <div id="product-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
-            <h2 id="product-name"></h2>
-            <p id="product-price"></p>
-        </div>
-    </div>
 
     <!-- Footer -->
     <footer>
