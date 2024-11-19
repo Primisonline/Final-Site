@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - TechGear</title>
+    <title>TechGear - Electronics Store</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,6 +20,10 @@
                     <li><a href="support.html">Support</a></li>
                 </ul>
             </nav>
+            <div id="slogan">
+                <h2>Welcome to TechGear</h2>
+                <p>Experience the future of technology</p>
+            </div>
         </div>
     </header>
 
@@ -27,7 +31,10 @@
     <section id="hero">
         <div class="carousel">
             <div class="carousel-slide">
-                <img src="images/hero.jpg" alt="TechGear Products">
+                <img src="https://github.com/Primisonline/Final-Site/blob/main/future-laptop.png?raw=true" alt="Featured Product 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="https://github.com/Primisonline/Final-Site/blob/main/future-phone.png?raw=true" alt="Featured Product 2">
             </div>
         </div>
     </section>
@@ -35,83 +42,63 @@
     <!-- Products Section -->
     <section id="products">
         <div class="container">
-            <h2>Our Products</h2>
+            <!-- Product Card: RIko model 935 -->
+            <div class="product-card">
+                <img src="https://github.com/Primisonline/Final-Site/blob/main/future-laptop.png?raw=true" alt="RIko model 935">
+                <h3>RIko model 935</h3>
+                <p class="price">$899.99</p>
+                <button class="btn-primary" onclick="showProductInfo('RIko model 935', 899.99)">View Details</button>
+                <button class="btn-add" onclick="addToCart('RIko model 935', 899.99)">Add to Cart</button>
+            </div>
             
-            <!-- Product Card: Laptop -->
+            <!-- Product Card: NAN0 4 -->
             <div class="product-card">
-                <img src="images/laptop.jpg" alt="Laptop">
-                <h3>Laptop</h3>
-                <p class="price">$999.99</p>
-                <button class="btn-primary" onclick="showProductInfo('Laptop', 999.99)">View Details</button>
-                <button class="btn-add" onclick="addToCart('Laptop', 999.99)">Add to Cart</button>
-            </div>
-
-            <!-- Product Card: Smartphone -->
-            <div class="product-card">
-                <img src="images/smartphone.jpg" alt="Smartphone">
-                <h3>Smartphone</h3>
-                <p class="price">$799.99</p>
-                <button class="btn-primary" onclick="showProductInfo('Smartphone', 799.99)">View Details</button>
-                <button class="btn-add" onclick="addToCart('Smartphone', 799.99)">Add to Cart</button>
-            </div>
-
-            <!-- Product Card: Headphones -->
-            <div class="product-card">
-                <img src="images/headphones.jpg" alt="Headphones">
-                <h3>Headphones</h3>
-                <p class="price">$199.99</p>
-                <button class="btn-primary" onclick="showProductInfo('Headphones', 199.99)">View Details</button>
-                <button class="btn-add" onclick="addToCart('Headphones', 199.99)">Add to Cart</button>
-            </div>
-
-            <!-- Product Card: Tablet -->
-            <div class="product-card">
-                <img src="images/tablet.jpg" alt="Tablet">
-                <h3>Tablet</h3>
+                <img src="https://github.com/Primisonline/Final-Site/blob/main/future-phone.png?raw=true" alt="NAN0 4">
+                <h3>NAN0 4</h3>
                 <p class="price">$499.99</p>
-                <button class="btn-primary" onclick="showProductInfo('Tablet', 499.99)">View Details</button>
-                <button class="btn-add" onclick="addToCart('Tablet', 499.99)">Add to Cart</button>
+                <button class="btn-primary" onclick="showProductInfo('NAN0 4', 499.99)">View Details</button>
+                <button class="btn-add" onclick="addToCart('NAN0 4', 499.99)">Add to Cart</button>
             </div>
 
-            <!-- Product Card: Smartwatch -->
+            <!-- Product Card: Lookout model 2025 -->
             <div class="product-card">
-                <img src="images/smartwatch.jpg" alt="Smartwatch">
-                <h3>Smartwatch</h3>
-                <p class="price">$249.99</p>
-                <button class="btn-primary" onclick="showProductInfo('Smartwatch', 249.99)">View Details</button>
-                <button class="btn-add" onclick="addToCart('Smartwatch', 249.99)">Add to Cart</button>
+                <img src="https://github.com/Primisonline/Final-Site/blob/main/headphones.png?raw=true" alt="Lookout model 2025">
+                <h3>Lookout model 2025</h3>
+                <p class="price">$149.99</p>
+                <button class="btn-primary" onclick="showProductInfo('Lookout model 2025', 149.99)">View Details</button>
+                <button class="btn-add" onclick="addToCart('Lookout model 2025', 149.99)">Add to Cart</button>
             </div>
 
-            <!-- Product Card: Camera -->
+            <!-- Product Card: Ark model 5 -->
             <div class="product-card">
-                <img src="images/camera.jpg" alt="Camera">
-                <h3>Camera</h3>
-                <p class="price">$649.99</p>
-                <button class="btn-primary" onclick="showProductInfo('Camera', 649.99)">View Details</button>
-                <button class="btn-add" onclick="addToCart('Camera', 649.99)">Add to Cart</button>
-            </div>
-
-            <!-- Product Card: Bluetooth Speaker -->
-            <div class="product-card">
-                <img src="images/speaker.jpg" alt="Bluetooth Speaker">
-                <h3>Bluetooth Speaker</h3>
-                <p class="price">$129.99</p>
-                <button class="btn-primary" onclick="showProductInfo('Bluetooth Speaker', 129.99)">View Details</button>
-                <button class="btn-add" onclick="addToCart('Bluetooth Speaker', 129.99)">Add to Cart</button>
+                <img src="https://github.com/Primisonline/Final-Site/blob/main/future-watch.png?raw=true" alt="Ark model 5">
+                <h3>Ark model 5</h3>
+                <p class="price">$299.99</p>
+                <button class="btn-primary" onclick="showProductInfo('Ark model 5', 299.99)">View Details</button>
+                <button class="btn-add" onclick="addToCart('Ark model 5', 299.99)">Add to Cart</button>
             </div>
         </div>
     </section>
 
+    <!-- Product Info Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="product-name"></h2>
+            <p id="product-price"></p>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div class="footer-links">
             <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="support.html">Customer Support</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
             </ul>
-            <p>&copy; 2024 TechGear. All rights reserved.</p>
         </div>
+        <p>&copy; 2024 TechGear. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
