@@ -14,9 +14,9 @@ body.light-mode {
 }
 
 .container {
-    width: 90%;
+    width: 85%; /* Adjusted width for better sizing */
     margin: 0 auto;
-    max-width: 1200px; /* Ensures it doesn't stretch too wide on larger screens */
+    max-width: 1200px; /* Ensures content doesn't stretch too far on large screens */
 }
 
 /* Header */
@@ -45,7 +45,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #fff; /* Default color for dark mode */
     text-decoration: none;
     transition: color 0.3s;
 }
