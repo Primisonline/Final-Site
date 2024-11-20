@@ -72,16 +72,19 @@ body.light-mode header nav ul li a:hover {
 }
 
 #slogan {
-    color: #333; /* Ensure slogan is dark for readability */
+    color: #333; /* Ensure slogan is dark for readability in light mode */
     text-align: right;
     font-size: 1.2em;
     flex-grow: 1;
 }
 
+body.light-mode #slogan h2 {
+    color: #333; /* Slogan text in black in light mode */
+}
+
 #slogan h2 {
     margin: 0;
     font-size: 2em;
-    color: #333; /* Dark text in light mode */
 }
 
 #slogan p {
