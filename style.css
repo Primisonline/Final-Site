@@ -71,8 +71,9 @@ body.light-mode header nav ul li a:hover {
     color: #d9534f; /* Red on hover for the menu links */
 }
 
+/* Slogan - Ensure text is readable in light mode */
 #slogan {
-    color: #333; /* Ensure slogan is dark for readability in light mode */
+    color: #333; /* Default color for light mode */
     text-align: right;
     font-size: 1.2em;
     flex-grow: 1;
