@@ -72,15 +72,16 @@ body.light-mode header nav ul li a:hover {
 }
 
 #slogan {
-    color: #333; /* Darker text for light mode */
+    color: #333; /* Ensure slogan is dark for readability */
     text-align: right;
-    font-size: 1.2em; /* Reduced font size for slogan */
+    font-size: 1.2em;
     flex-grow: 1;
 }
 
 #slogan h2 {
     margin: 0;
     font-size: 2em;
+    color: #333; /* Dark text in light mode */
 }
 
 #slogan p {
@@ -146,19 +147,19 @@ body.light-mode header nav ul li a:hover {
     border-radius: 5px;
     position: absolute;
     bottom: 20px;
-    width: 48%; /* Adjusted to make sure both buttons fit */
+    width: 40%; /* Adjusted to ensure buttons fit */
     box-sizing: border-box;
     font-size: 1em;
 }
 
 .product-card .btn-primary {
     background-color: #00b3ff; /* Blue by default for View Details */
-    left: 2%;
+    left: 5%;
 }
 
 .product-card .btn-add {
     background-color: #28a745; /* Green for Add to Cart button */
-    right: 2%;
+    right: 5%;
 }
 
 .product-card .btn-primary:hover,
