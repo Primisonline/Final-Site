@@ -116,7 +116,7 @@ body.light-mode header nav ul li a:hover {
     box-sizing: border-box;
     transition: transform 0.3s ease;
     border-radius: 10px;
-    height: 350px; /* Fixed height to prevent distortion */
+    height: 380px; /* Adjusted height */
     position: relative;
 }
 
@@ -141,23 +141,24 @@ body.light-mode header nav ul li a:hover {
 
 .product-card .btn-primary,
 .product-card .btn-add {
-    background-color: #00b3ff; /* Blue by default for View Details */
-    color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     position: absolute;
     bottom: 20px;
-    width: calc(50% - 10px); /* Ensure buttons fit within the card */
+    width: 48%; /* Adjusted to make sure both buttons fit */
+    box-sizing: border-box;
+    font-size: 1em;
 }
 
 .product-card .btn-primary {
-    left: 10px;
+    background-color: #00b3ff; /* Blue by default for View Details */
+    left: 2%;
 }
 
 .product-card .btn-add {
     background-color: #28a745; /* Green for Add to Cart button */
-    right: 10px;
+    right: 2%;
 }
 
 .product-card .btn-primary:hover,
