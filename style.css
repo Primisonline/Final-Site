@@ -36,6 +36,7 @@ header .logo a {
 header nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 header nav ul li {
@@ -46,10 +47,28 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 header nav ul li a:hover {
     color: #00b3ff;
+}
+
+/* Light Mode Adjustments */
+body.light-mode header {
+    background-color: #fff;
+}
+
+body.light-mode header .logo a {
+    color: #d9534f; /* Red logo in light mode */
+}
+
+body.light-mode header nav ul li a {
+    color: #333; /* Dark text for the menu links in light mode */
+}
+
+body.light-mode header nav ul li a:hover {
+    color: #d9534f; /* Red on hover for the menu links */
 }
 
 #slogan {
@@ -209,18 +228,6 @@ footer a:hover {
 /* Light Mode Adjustments */
 body.light-mode {
     background-color: #f4f4f4;
-    color: #333;
-}
-
-body.light-mode header {
-    background-color: #fff;
-}
-
-body.light-mode header .logo a {
-    color: #d9534f; /* Red logo in light mode */
-}
-
-body.light-mode #hero h2 {
     color: #333;
 }
 
