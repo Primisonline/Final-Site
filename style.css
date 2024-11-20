@@ -141,7 +141,7 @@ body.light-mode header nav ul li a:hover {
 
 .product-card .btn-primary,
 .product-card .btn-add {
-    background-color: #00b3ff;
+    background-color: #00b3ff; /* Blue by default for View Details */
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -156,12 +156,17 @@ body.light-mode header nav ul li a:hover {
 }
 
 .product-card .btn-add {
+    background-color: #28a745; /* Green for Add to Cart button */
     right: 10px;
 }
 
 .product-card .btn-primary:hover,
 .product-card .btn-add:hover {
     background-color: #007acc;
+}
+
+.product-card .btn-add:hover {
+    background-color: #218838; /* Darker green for hover */
 }
 
 /* Modal (for product details) */
