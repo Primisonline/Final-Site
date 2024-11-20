@@ -148,14 +148,15 @@ body.light-mode .product-card {
     font-size: 1.1em;
 }
 
+/* Button Styling */
 .product-card .btn-primary,
 .product-card .btn-add {
-    padding: 12px 25px;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 30px; /* Rounded button edges */
     position: absolute;
     bottom: 20px;
-    width: 40%; /* Adjusted to ensure buttons fit */
+    width: 48%; /* Adjusted width for buttons to fit properly */
     box-sizing: border-box;
     font-size: 1em;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -163,12 +164,12 @@ body.light-mode .product-card {
 
 .product-card .btn-primary {
     background-color: #00b3ff; /* Blue by default for View Details */
-    left: 5%;
+    left: 2%;
 }
 
 .product-card .btn-add {
     background-color: #28a745; /* Green for Add to Cart button */
-    right: 5%;
+    right: 2%;
 }
 
 .product-card .btn-primary:hover,
