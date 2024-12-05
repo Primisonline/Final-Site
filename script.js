@@ -15,12 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Product Info Modal
-function showProductInfo(name, price, description, image) {
+function showProductInfo(name, price, description) {
     document.getElementById('product-name').innerText = name;
-    document.getElementById('product-price').innerText = `Price: $${price.toFixed(2)}`;
-    document.getElementById('product-description').innerText = description;
-    document.getElementById('product-image').src = image;
-    document.getElementById('product-modal').style.display = 'flex';
+    document.getElementById('product-description').innerText = `Description: ${description}`;
+    document.getElementById('product-price').innerText = `Cost: $${price.toFixed(2)}`;
+    document.getElementById('product-modal').style.display = 'block';
 }
 
 function closeModal() {
@@ -37,34 +36,35 @@ function addToCart(name, price) {
 }
 
 function updateCartUI() {
+    // Store cart in localStorage
     localStorage.setItem('cart', JSON.stringify(cart));
 
+    // Update checkout page or cart UI
     const cartItemsContainer = document.getElementById('cart-items');
-    cartItemsContainer.innerHTML = '';
+    cartItemsContainer.innerHTML = ''; // Clear current items
 
     cart.forEach((item, index) => {
         const cartItem = document.createElement('div');
         cartItem.classList.add('cart-item');
-        cartItem.innerHTML = `
-            <p>${item.name}</p>
+        cartItem.innerHTML = 
+            `<p>${item.name}</p>
             <p>$${item.price.toFixed(2)}</p>
-            <button onclick="removeFromCart(${index})">Remove</button>
-        `;
+            <button onclick="removeFromCart(${index})">Remove</button>`;
         cartItemsContainer.appendChild(cartItem);
     });
 
+    // Calculate totals (Subtotal, Sales Tax, State Tax)
     const subtotal = cart.reduce((acc, item) => acc + item.price, 0);
     const salesTax = subtotal * 0.057;
     const stateTax = subtotal * 0.092;
     const total = subtotal + salesTax + stateTax;
 
     const summary = document.getElementById('cart-summary');
-    summary.innerHTML = `
-        <p>Subtotal: $${subtotal.toFixed(2)}</p>
+    summary.innerHTML = 
+        `<p>Subtotal: $${subtotal.toFixed(2)}</p>
         <p>Sales Tax (5.7%): $${salesTax.toFixed(2)}</p>
         <p>State Tax (9.2%): $${stateTax.toFixed(2)}</p>
-        <p>Total: $${total.toFixed(2)}</p>
-    `;
+        <p>Total: $${total.toFixed(2)}</p>`;
 }
 
 function removeFromCart(index) {
@@ -72,4 +72,5 @@ function removeFromCart(index) {
     updateCartUI();
 }
 
+// Initial cart UI update
 updateCartUI();
