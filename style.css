@@ -80,7 +80,7 @@ body.light-mode header nav ul li a:hover {
 }
 
 body.light-mode #slogan h2 {
-    color: #000; /* Black text color in light mode */
+    color: #000; /* Ensure black text in light mode */
 }
 
 #slogan h2 {
@@ -262,3 +262,4 @@ body.light-mode footer {
     background-color: #f1f1f1;
     color: #333;
 }
+
