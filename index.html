@@ -39,48 +39,48 @@
                 <img src="https://github.com/Primisonline/Final-Site/blob/main/future-laptop.png?raw=true" alt="RIko Model 935">
                 <h3>RIko Model 935</h3>
                 <p>$999.99</p>
-                <a href="#" class="btn-primary" onclick="showProductInfo('RIko Model 935', 999.99, 'Laptop', 'The RIko Model 935 is a cutting-edge laptop designed for the future. Equipped with a quantum processor, 16GB of RAM, and a 1TB solid-state drive, it delivers lightning-fast performance. It features a holographic display and neural interface for seamless control. Its sleek design with a foldable screen makes it the perfect portable powerhouse for the tech-savvy professional.', 'future-laptop.png')">View Details</a>
+                <a href="javascript:void(0);" class="btn-primary" onclick="showProductInfo('RIko Model 935', 999.99, 'A cutting-edge laptop with futuristic performance.', 'https://github.com/Primisonline/Final-Site/blob/main/future-laptop.png?raw=true')">View Details</a>
                 <a href="#" class="btn-add" onclick="addToCart('RIko Model 935', 999.99)">Add to Cart</a>
             </div>
             <div class="product-card">
                 <img src="https://github.com/Primisonline/Final-Site/blob/main/future-phone.png?raw=true" alt="NAN0 4">
                 <h3>NAN0 4</h3>
                 <p>$799.99</p>
-                <a href="#" class="btn-primary" onclick="showProductInfo('NAN0 4', 799.99, 'Smartphone', 'The NAN0 4 is the world\'s first self-healing smartphone. Featuring a fully transparent display, it uses nanotechnology to repair itself from cracks and scratches. Powered by a 7nm AI processor and 12GB of RAM, it ensures smooth multitasking and gaming. With its long-lasting graphene battery, the NAN0 4 will redefine your mobile experience.', 'future-phone.png')">View Details</a>
+                <a href="javascript:void(0);" class="btn-primary" onclick="showProductInfo('NAN0 4', 799.99, 'The ultimate smartphone experience for 2024.', 'https://github.com/Primisonline/Final-Site/blob/main/future-phone.png?raw=true')">View Details</a>
                 <a href="#" class="btn-add" onclick="addToCart('NAN0 4', 799.99)">Add to Cart</a>
             </div>
             <div class="product-card">
                 <img src="https://github.com/Primisonline/Final-Site/blob/main/headphones.png?raw=true" alt="Lookout Model 2025">
                 <h3>Lookout Model 2025</h3>
                 <p>$199.99</p>
-                <a href="#" class="btn-primary" onclick="showProductInfo('Lookout Model 2025', 199.99, 'Wireless Headphones', 'The Lookout Model 2025 headphones offer an immersive sound experience with holographic 3D audio. Equipped with noise-cancellation technology, these futuristic headphones connect wirelessly via quantum Bluetooth for ultra-fast data transfer. The sleek ergonomic design and adjustable fit make them perfect for long listening sessions in any environment.', 'headphones.png')">View Details</a>
+                <a href="javascript:void(0);" class="btn-primary" onclick="showProductInfo('Lookout Model 2025', 199.99, 'Wireless headphones designed for comfort and sound quality.', 'https://github.com/Primisonline/Final-Site/blob/main/headphones.png?raw=true')">View Details</a>
                 <a href="#" class="btn-add" onclick="addToCart('Lookout Model 2025', 199.99)">Add to Cart</a>
             </div>
             <div class="product-card">
                 <img src="https://github.com/Primisonline/Final-Site/blob/main/future-watch.png?raw=true" alt="Ark Model 5">
                 <h3>Ark Model 5</h3>
                 <p>$299.99</p>
-                <a href="#" class="btn-primary" onclick="showProductInfo('Ark Model 5', 299.99, 'Smartwatch', 'The Ark Model 5 smartwatch integrates seamlessly with your neural network for real-time health monitoring. Its holographic interface allows users to interact with information projected in mid-air. The smartwatch also features advanced biometrics and energy harvesting capabilities, making it the ideal companion for fitness enthusiasts and tech lovers alike.', 'future-watch.png')">View Details</a>
+                <a href="javascript:void(0);" class="btn-primary" onclick="showProductInfo('Ark Model 5', 299.99, 'A sleek smartwatch with advanced features for the future.', 'https://github.com/Primisonline/Final-Site/blob/main/future-watch.png?raw=true')">View Details</a>
                 <a href="#" class="btn-add" onclick="addToCart('Ark Model 5', 299.99)">Add to Cart</a>
             </div>
         </div>
     </section>
 
-    <!-- Product Details Modal -->
-    <div id="product-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
-            <h2 id="product-name"></h2>
-            <p id="product-price"></p>
-            <p id="product-description"></p>
-            <img id="product-image" src="" alt="" style="width: 100%; height: auto;">
-        </div>
-    </div>
-
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 TechGear. All rights reserved.</p>
     </footer>
+
+    <!-- Product Info Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h3 id="product-name"></h3>
+            <img id="product-image" src="" alt="Product Image" style="width: 100%; max-height: 300px; object-fit: contain;">
+            <p id="product-price"></p>
+            <p id="product-description"></p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
