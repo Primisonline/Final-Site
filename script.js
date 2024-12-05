@@ -15,11 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Product Info Modal
-function showProductInfo(name, price, type, description, imgSrc) {
+function showProductInfo(name, price, description, image) {
     document.getElementById('product-name').innerText = name;
     document.getElementById('product-price').innerText = `Price: $${price.toFixed(2)}`;
     document.getElementById('product-description').innerText = description;
-    document.getElementById('product-image').src = imgSrc;
+    document.getElementById('product-image').src = image;
     document.getElementById('product-modal').style.display = 'flex';
 }
 
@@ -38,8 +38,9 @@ function addToCart(name, price) {
 
 function updateCartUI() {
     localStorage.setItem('cart', JSON.stringify(cart));
+
     const cartItemsContainer = document.getElementById('cart-items');
-    cartItemsContainer.innerHTML = ''; 
+    cartItemsContainer.innerHTML = '';
 
     cart.forEach((item, index) => {
         const cartItem = document.createElement('div');
@@ -71,5 +72,5 @@ function removeFromCart(index) {
     updateCartUI();
 }
 
-// Initial cart UI update
 updateCartUI();
+
