@@ -12,10 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('theme') === 'light') {
         body.classList.add('light-mode');
     }
+    // Ensure modal is hidden when the page loads or theme switches
+    document.getElementById('product-modal').style.display = 'none'; // Hide modal
 });
 
 // Product Info Modal
 function showProductInfo(name, price, description) {
+    // Show the modal only when a product is clicked
     document.getElementById('product-name').innerText = name;
     document.getElementById('product-description').innerText = `Description: ${description}`;
     document.getElementById('product-price').innerText = `Cost: $${price.toFixed(2)}`;
@@ -23,6 +26,7 @@ function showProductInfo(name, price, description) {
 }
 
 function closeModal() {
+    // Hide the modal when the close button (X) is clicked
     document.getElementById('product-modal').style.display = 'none';
 }
 
@@ -74,4 +78,3 @@ function removeFromCart(index) {
 
 // Initial cart UI update
 updateCartUI();
-
