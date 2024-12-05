@@ -13,59 +13,54 @@
             <div class="logo" id="logo">
                 <h1><a href="index.html">TechGear</a></h1>
             </div>
-            <div id="slogan">
-                <h2>Your first stop shop to future technologies</h2>
-            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-
-    <!-- Navigation Bar -->
-    <nav id="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="checkout.html">Checkout</a></li>
-            <li><a href="support.html">Support</a></li>
-        </ul>
-    </nav>
 
     <!-- Hero Section -->
     <section id="hero">
         <div class="container">
-            <h2>Welcome to TechGear!</h2>
-            <p>Find the latest futuristic technology here.</p>
+            <div id="slogan">
+                <h2>Your first stop shop to future technologies</h2>
+            </div>
         </div>
     </section>
 
     <!-- Products Section -->
     <section id="products">
         <div class="container">
-            <!-- Product Cards -->
             <div class="product-card">
                 <img src="https://github.com/Primisonline/Final-Site/blob/main/future-laptop.png?raw=true" alt="RIko Model 935">
                 <h3>RIko Model 935</h3>
                 <p>$999.99</p>
-                <a href="javascript:void(0);" class="btn-primary" onclick="showProductInfo('RIko Model 935', 999.99, 'A cutting-edge laptop with futuristic performance.', 'https://github.com/Primisonline/Final-Site/blob/main/future-laptop.png?raw=true')">View Details</a>
+                <a href="#" class="btn-primary" onclick="showProductInfo('RIko Model 935', 999.99, 'RIko Model 935 is a high-end laptop designed for gamers and tech enthusiasts. It features a fast processor, top-tier graphics, and a sleek design.', 999.99)">View Details</a>
                 <a href="#" class="btn-add" onclick="addToCart('RIko Model 935', 999.99)">Add to Cart</a>
             </div>
             <div class="product-card">
                 <img src="https://github.com/Primisonline/Final-Site/blob/main/future-phone.png?raw=true" alt="NAN0 4">
                 <h3>NAN0 4</h3>
                 <p>$799.99</p>
-                <a href="javascript:void(0);" class="btn-primary" onclick="showProductInfo('NAN0 4', 799.99, 'The ultimate smartphone experience for 2024.', 'https://github.com/Primisonline/Final-Site/blob/main/future-phone.png?raw=true')">View Details</a>
+                <a href="#" class="btn-primary" onclick="showProductInfo('NAN0 4', 799.99, 'NAN0 4 is the latest smartphone with a powerful camera, fast charging, and an immersive display.', 799.99)">View Details</a>
                 <a href="#" class="btn-add" onclick="addToCart('NAN0 4', 799.99)">Add to Cart</a>
             </div>
             <div class="product-card">
                 <img src="https://github.com/Primisonline/Final-Site/blob/main/headphones.png?raw=true" alt="Lookout Model 2025">
                 <h3>Lookout Model 2025</h3>
                 <p>$199.99</p>
-                <a href="javascript:void(0);" class="btn-primary" onclick="showProductInfo('Lookout Model 2025', 199.99, 'Wireless headphones designed for comfort and sound quality.', 'https://github.com/Primisonline/Final-Site/blob/main/headphones.png?raw=true')">View Details</a>
+                <a href="#" class="btn-primary" onclick="showProductInfo('Lookout Model 2025', 199.99, 'The Lookout Model 2025 offers noise cancellation, deep bass, and long battery life for an immersive listening experience.', 199.99)">View Details</a>
                 <a href="#" class="btn-add" onclick="addToCart('Lookout Model 2025', 199.99)">Add to Cart</a>
             </div>
             <div class="product-card">
                 <img src="https://github.com/Primisonline/Final-Site/blob/main/future-watch.png?raw=true" alt="Ark Model 5">
                 <h3>Ark Model 5</h3>
                 <p>$299.99</p>
-                <a href="javascript:void(0);" class="btn-primary" onclick="showProductInfo('Ark Model 5', 299.99, 'A sleek smartwatch with advanced features for the future.', 'https://github.com/Primisonline/Final-Site/blob/main/future-watch.png?raw=true')">View Details</a>
+                <a href="#" class="btn-primary" onclick="showProductInfo('Ark Model 5', 299.99, 'Ark Model 5 is a smart watch with advanced fitness tracking, heart rate monitoring, and a sleek design.', 299.99)">View Details</a>
                 <a href="#" class="btn-add" onclick="addToCart('Ark Model 5', 299.99)">Add to Cart</a>
             </div>
         </div>
@@ -76,14 +71,13 @@
         <p>&copy; 2024 TechGear. All rights reserved.</p>
     </footer>
 
-    <!-- Product Info Modal -->
+    <!-- Modal for Product Details -->
     <div id="product-modal" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal()">&times;</span>
-            <h3 id="product-name"></h3>
-            <img id="product-image" src="" alt="Product Image" style="width: 100%; max-height: 300px; object-fit: contain;">
-            <p id="product-price"></p>
+            <h2 id="product-name"></h2>
             <p id="product-description"></p>
+            <p id="product-price"></p>
         </div>
     </div>
 
