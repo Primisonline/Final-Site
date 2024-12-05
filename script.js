@@ -15,9 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Product Info Modal
-function showProductInfo(name, price) {
+function showProductInfo(name, price, type, description, image) {
     document.getElementById('product-name').innerText = name;
     document.getElementById('product-price').innerText = `Price: $${price.toFixed(2)}`;
+    document.getElementById('product-description').innerText = description;
+    document.getElementById('product-image').src = `https://github.com/Primisonline/Final-Site/blob/main/${image}?raw=true`;
     document.getElementById('product-modal').style.display = 'block';
 }
 
