@@ -9,13 +9,13 @@ body {
 }
 
 body.light-mode {
-    background-color: #f4f4f4;
+    background-color: #fff;
     color: #333;
 }
 
 /* Header Styles */
 header {
-    background-color: #000;
+    background-color: #111;
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
@@ -146,7 +146,6 @@ body.light-mode .product-card {
     padding: 20px;
     width: 80%;
     max-width: 600px;
-    text-align: center;
     border-radius: 10px;
 }
 
@@ -167,13 +166,9 @@ body.light-mode .close-btn {
     color: #ff0000;
 }
 
-body.light-mode .modal-content h3 {
-    color: #ff0000;
-}
-
-/* Footer */
+/* Footer Styles */
 footer {
-    background-color: #000;
+    background-color: #111;
     color: #fff;
     text-align: center;
     padding: 10px 0;
