@@ -73,4 +73,3 @@ function removeFromCart(index) {
 }
 
 updateCartUI();
-
