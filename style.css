@@ -1,115 +1,86 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
     margin: 0;
     padding: 0;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body.light-mode {
-    background-color: #fff;
+    background-color: #f4f4f4;
     color: #333;
 }
 
-body.dark-mode {
-    background-color: #333;
-    color: white;
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
-/* Header Styles */
+/* Header */
 header {
-    background-color: #111;
+    background-color: #222;
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header.light-mode {
+header .logo a {
+    color: #00b3ff;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff; /* Default color for dark mode */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #00b3ff;
+}
+
+/* Light Mode Adjustments */
+body.light-mode header {
     background-color: #fff;
 }
 
-header .logo h1 a {
-    color: #00b3ff; /* Electric blue in dark mode */
-    text-decoration: none;
-    font-size: 2.5em;
-    cursor: pointer;
+body.light-mode header .logo a {
+    color: #d9534f; /* Red logo in light mode */
 }
 
-header.light-mode .logo h1 a {
-    color: #ff0000; /* Bright red in light mode */
+body.light-mode header nav ul li a {
+    color: #333; /* Dark text for the menu links in light mode */
 }
 
-header #slogan {
-    font-size: 1.5em;
-    color: #00b3ff;
-    text-align: right;
-    width: 60%;
-}
-
-header.light-mode #slogan {
-    color: #ff0000;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-/* Navigation Bar */
-#navbar {
-    background-color: #111;
-    padding: 10px 0;
-    text-align: left;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-#navbar a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    margin: 0 15px;
-    font-size: 1.1em;
-}
-
-#navbar a:hover {
-    text-decoration: underline;
-}
-
-body.light-mode #navbar {
-    background-color: #f9f9f9;
-}
-
-body.light-mode #navbar a {
-    color: #333;
-}
-
-body.light-mode #navbar a:hover {
-    color: #ff0000;
+body.light-mode header nav ul li a:hover {
+    color: #d9534f; /* Red on hover for the menu links */
 }
 
 /* Hero Section */
 #hero {
-    background-color: #444;
-    padding: 40px 0;
+    margin: 50px 0;
     text-align: center;
-}
-
-body.light-mode #hero {
-    background-color: #f9f9f9;
 }
 
 #hero h2 {
     font-size: 2.5em;
-    margin: 20px 0;
-}
-
-#hero p {
-    font-size: 1.2em;
+    color: #fff;
+    margin: 0;
 }
 
 /* Products Section */
@@ -120,7 +91,7 @@ body.light-mode #hero {
 }
 
 body.light-mode #products {
-    background-color: #f9f9f9;
+    background-color: #fff; /* White background for product section in light mode */
 }
 
 .product-card {
@@ -128,50 +99,72 @@ body.light-mode #products {
     margin: 10px;
     padding: 20px;
     display: inline-block;
-    width: 22%;
+    width: 22%; /* Adjusted for better spacing */
     box-sizing: border-box;
     transition: transform 0.3s ease;
     border-radius: 10px;
-    height: 380px;
+    height: 380px; /* Adjusted height */
     position: relative;
 }
 
 body.light-mode .product-card {
-    background-color: #fff;
+    background-color: #f9f9f9; /* Light background for product cards in light mode */
+}
+
+.product-card:hover {
+    transform: scale(1.05);
 }
 
 .product-card img {
     width: 100%;
-    max-height: 200px;
-    object-fit: contain;
+    height: auto;
+    border-radius: 10px;
 }
 
 .product-card h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 10px 0;
 }
 
 .product-card p {
-    font-size: 1.2em;
-    color: #ff0000;
+    font-size: 1.1em;
 }
 
-.product-card a {
-    display: block;
-    margin-top: 10px;
-    padding: 10px;
-    text-align: center;
-    background-color: #00b3ff;
-    color: #fff;
+/* Button Styling */
+.product-card .btn-primary,
+.product-card .btn-add {
+    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 30px; /* Rounded button edges */
+    position: absolute;
+    bottom: 20px;
+    width: 48%; /* Adjusted width for buttons to fit properly */
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-body.light-mode .product-card a {
-    background-color: #ff0000;
+.product-card .btn-primary {
+    background-color: #00b3ff; /* Blue by default for View Details */
+    left: 2%;
 }
 
-/* Modal Styles */
+.product-card .btn-add {
+    background-color: #28a745; /* Green for Add to Cart button */
+    right: 2%;
+}
+
+.product-card .btn-primary:hover,
+.product-card .btn-add:hover {
+    background-color: #007acc;
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+.product-card .btn-add:hover {
+    background-color: #218838; /* Darker green for hover */
+}
+
+/* Modal (for product details) */
 .modal {
     display: none;
     position: fixed;
@@ -180,75 +173,70 @@ body.light-mode .product-card a {
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding-top: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-content {
-    background-color: #fff;
-    margin: 5% auto;
+    background-color: white;
+    color: #333;
+    margin: auto;
     padding: 20px;
-    border: 1px solid #888;
     width: 80%;
-    max-width: 500px;
-}
-
-body.light-mode .modal-content {
-    background-color: #333;
-    color: white;
+    max-width: 600px;
+    border-radius: 10px;
 }
 
 .close-btn {
+    color: #aaa;
+    float: right;
     font-size: 28px;
-    color: #aaa;
     font-weight: bold;
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    color: #aaa;
-    cursor: pointer;
 }
 
 .close-btn:hover,
 .close-btn:focus {
-    color: #000;
+    color: black;
     text-decoration: none;
     cursor: pointer;
 }
 
 /* Footer */
 footer {
-    background-color: #111;
-    color: #fff;
+    background-color: #222;
+    color: #888;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px;
 }
 
-body.light-mode footer {
-    background-color: #f4f4f4;
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer a {
+    color: #888;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Light Mode Adjustments */
+body.light-mode .product-card {
+    background-color: #f9f9f9;
     color: #333;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .product-card {
-        width: 48%;
-    }
-}
-
-@media (max-width: 480px) {
-    .product-card {
-        width: 100%;
-    }
-
-    #navbar ul {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-    }
-
-    #navbar li {
-        margin: 5px 0;
-    }
+body.light-mode footer {
+    background-color: #f1f1f1;
+    color: #333;
 }
