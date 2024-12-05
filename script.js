@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Product Info Modal
-function showProductInfo(name, price, type, description, image) {
+function showProductInfo(name, price, type, description, imgSrc) {
     document.getElementById('product-name').innerText = name;
     document.getElementById('product-price').innerText = `Price: $${price.toFixed(2)}`;
     document.getElementById('product-description').innerText = description;
-    document.getElementById('product-image').src = `https://github.com/Primisonline/Final-Site/blob/main/${image}?raw=true`;
-    document.getElementById('product-modal').style.display = 'block';
+    document.getElementById('product-image').src = imgSrc;
+    document.getElementById('product-modal').style.display = 'flex';
 }
 
 function closeModal() {
@@ -37,12 +37,9 @@ function addToCart(name, price) {
 }
 
 function updateCartUI() {
-    // Store cart in localStorage
     localStorage.setItem('cart', JSON.stringify(cart));
-
-    // Update checkout page or cart UI
     const cartItemsContainer = document.getElementById('cart-items');
-    cartItemsContainer.innerHTML = ''; // Clear current items
+    cartItemsContainer.innerHTML = ''; 
 
     cart.forEach((item, index) => {
         const cartItem = document.createElement('div');
@@ -55,7 +52,6 @@ function updateCartUI() {
         cartItemsContainer.appendChild(cartItem);
     });
 
-    // Calculate totals (Subtotal, Sales Tax, State Tax)
     const subtotal = cart.reduce((acc, item) => acc + item.price, 0);
     const salesTax = subtotal * 0.057;
     const stateTax = subtotal * 0.092;
