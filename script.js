@@ -74,3 +74,4 @@ function removeFromCart(index) {
 
 // Initial cart UI update
 updateCartUI();
+
