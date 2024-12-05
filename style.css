@@ -33,15 +33,18 @@ header .logo h1 a {
     color: #00b3ff; /* Electric blue in dark mode */
     text-decoration: none;
     font-size: 2.5em;
+    cursor: pointer;
 }
 
 header.light-mode .logo h1 a {
     color: #ff0000; /* Bright red in light mode */
 }
 
-#slogan {
+header #slogan {
     font-size: 1.5em;
     color: #00b3ff;
+    text-align: right;
+    width: 60%;
 }
 
 header.light-mode #slogan {
@@ -55,16 +58,14 @@ header .container {
     width: 100%;
 }
 
-#slogan {
-    text-align: right;
-    width: 50%;
-}
-
 /* Navigation Bar */
 #navbar {
     background-color: #111;
     padding: 10px 0;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #navbar a {
@@ -72,6 +73,7 @@ header .container {
     text-decoration: none;
     padding: 10px;
     margin: 0 15px;
+    font-size: 1.1em;
 }
 
 #navbar a:hover {
@@ -166,7 +168,7 @@ body.light-mode .product-card {
 }
 
 body.light-mode .product-card a {
-    background-color: #ff0000; /* Red in light mode */
+    background-color: #ff0000;
 }
 
 /* Modal Styles */
